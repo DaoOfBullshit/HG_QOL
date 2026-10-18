@@ -1728,11 +1728,39 @@ u32 LONG_CALL GetLevelCap(void)
     return 0;
 #else
 #ifdef IMPLEMENT_LEVEL_CAP
-    u32 levelCap = GetScriptVar(LEVEL_CAP_VARIABLE);
-    if (levelCap > 100 || levelCap == 0) {
-        levelCap = 100;
-    }
-    return levelCap;
+    u8 badges;
+    struct PlayerProfile *profile = Sav2_PlayerData_GetProfileAddr(SaveBlock2_get());
+    badges = profile->johtoBadges;
+
+    if (profile->gameClear)
+        return 100;
+
+    if (badges == 0)
+        return 13;
+    else if (badges == 1)
+        return 17;
+    else if (badges == 2)
+        return 19;
+    else if (badges == 3)
+        return 25;
+    else if (badges == 4)
+        return 31;
+    else if (badges == 5)
+        return 35;
+    else if (badges == 6)
+        return 34;
+    else if (badges == 7)
+        return 41;
+    else if (badges == 8)
+        return 50;
+
+    return 100;
+
+    // u32 levelCap = GetScriptVar(LEVEL_CAP_VARIABLE);
+    // if (levelCap > 100 || levelCap == 0) {
+    //     levelCap = 100;
+    // }
+    // return levelCap;
 #else
     return 100;
 #endif // IMPLEMENT_LEVEL_CAP
