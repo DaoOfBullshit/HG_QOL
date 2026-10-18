@@ -42,6 +42,7 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
     int client_set_max;
 
     client_set_max = BattleWorkClientSetMaxGet(bw);
+    sp->money_multiplier = 3;
 
     // 022531A8
     do {
@@ -1041,7 +1042,7 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
             for (i = 0; i < client_set_max; i++) {
                 client_no = sp->turnOrder[i];
                 if (BattleItemDataGet(sp, sp->battlemon[client_no].item, 1) == HOLD_EFFECT_MONEY_UP) {
-                    sp->money_multiplier = 2;
+                    sp->money_multiplier = 5;
                 }
             }
             sp->switch_in_check_seq_no++;
