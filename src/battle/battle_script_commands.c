@@ -1365,11 +1365,20 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
 
     // count how many pokémon are getting experience
     if (!expcalc->work[6]) {
+        u32 livingMask = 0;
+        u32 livingCount = 0;
+        BOOL hasExpShare = FALSE;
+        
         monCount = 0;
         monCountFromItem = 0;
         for (int i = 0; i < party->count; i++) {
             struct PartyPokemon *pploop = BattleWorkPokemonParamGet(expcalc->bw, exp_client_no, i);
-            if ((GetMonData(pploop, MON_DATA_SPECIES, NULL)) && (GetMonData(pploop, MON_DATA_HP, NULL))) {
+            if ((GetMonData(pploop, MON_DATA_SPECIES, NULL)) && (GetMonData(pploop, MON_DATA_HP, NULL))
+                && (GetMonData(pploop, MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_EGG)) {
+                
+                livingMask |= No2Bit(i);
+                livingCount++;
+                
                 if (sp->obtained_exp_right_flag[client_no /*(sp->fainting_client >> 1) & 1*/] & No2Bit(i)) {
                     monCount++;
                 }
@@ -1378,9 +1387,14 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                 eqp = BattleItemDataGet(sp, item, 1);
 
                 if (eqp == HOLD_EFFECT_EXP_SHARE) {
-                    monCountFromItem++;
+                    hasExpShare = TRUE;
                 }
             }
+        }
+
+        if (hasExpShare) {
+            sp->obtained_exp_right_flag[client_no] |= livingMask; // flip the bits for every living mon
+            monCount = livingCount;
         }
     }
 
@@ -1426,7 +1440,7 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
                     sp->exp_share_obtained_exp = 1;
                 }
             } else {
-                sp->obtained_exp = totalexp / monCount;
+                sp->obtained_exp = totalexp;
                 if (sp->obtained_exp == 0) {
                     sp->obtained_exp = 1;
                 }

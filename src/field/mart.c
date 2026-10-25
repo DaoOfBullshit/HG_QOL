@@ -49,7 +49,7 @@ u16 sCherrygroveCityMart[] = {
 };
 
 u16 sVioletCityMart[] = {
-    ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF
+    ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, ITEM_EXP_SHARE, 0xFFFF
 };
 
 u16 sAzaleaCityMart[] = {
