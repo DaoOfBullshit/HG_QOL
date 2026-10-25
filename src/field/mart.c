@@ -93,7 +93,7 @@ u16 sCianwoodPharmacy[] = {
 };
 
 u16 sBlackthornAndBattleFrontierMart[] = {
-    ITEM_AIR_MAIL, ITEM_NET_BALL, ITEM_DUSK_BALL, ITEM_HEART_SCALE, 0xFFFF
+    ITEM_AIR_MAIL, ITEM_NET_BALL, ITEM_DUSK_BALL, ITEM_HEART_SCALE, ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH, 0xFFFF
 };
 
 u16 sIndigoPlateau[] = {
