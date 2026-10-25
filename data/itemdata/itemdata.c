@@ -18798,7 +18798,7 @@ const ITEMDATA __data[] =
 
 [ITEM_POWER_BRACER] =
 {
-    ITEM_PRICE(10000),
+    ITEM_PRICE(5000),
     .holdEffect = HOLD_EFFECT_LVLUP_ATK_EV_UP,
     .holdEffectParam = 4,
     .pluckEffect = 0,
@@ -18863,7 +18863,7 @@ const ITEMDATA __data[] =
 
 [ITEM_POWER_BELT] =
 {
-    ITEM_PRICE(10000),
+    ITEM_PRICE(5000),
     .holdEffect = HOLD_EFFECT_LVLUP_DEF_EV_UP,
     .holdEffectParam = 4,
     .pluckEffect = 0,
@@ -18928,7 +18928,7 @@ const ITEMDATA __data[] =
 
 [ITEM_POWER_LENS] =
 {
-    ITEM_PRICE(10000),
+    ITEM_PRICE(5000),
     .holdEffect = HOLD_EFFECT_LVLUP_SPATK_EV_UP,
     .holdEffectParam = 4,
     .pluckEffect = 0,
@@ -18993,7 +18993,7 @@ const ITEMDATA __data[] =
 
 [ITEM_POWER_BAND] =
 {
-    ITEM_PRICE(10000),
+    ITEM_PRICE(5000),
     .holdEffect = HOLD_EFFECT_LVLUP_SPDEF_EV_UP,
     .holdEffectParam = 4,
     .pluckEffect = 0,
@@ -19058,7 +19058,7 @@ const ITEMDATA __data[] =
 
 [ITEM_POWER_ANKLET] =
 {
-    ITEM_PRICE(10000),
+    ITEM_PRICE(5000),
     .holdEffect = HOLD_EFFECT_LVLUP_SPEED_EV_UP,
     .holdEffectParam = 4,
     .pluckEffect = 0,
@@ -19123,7 +19123,7 @@ const ITEMDATA __data[] =
 
 [ITEM_POWER_WEIGHT] =
 {
-    ITEM_PRICE(10000),
+    ITEM_PRICE(5000),
     .holdEffect = HOLD_EFFECT_LVLUP_HP_EV_UP,
     .holdEffectParam = 4,
     .pluckEffect = 0,
