@@ -41938,7 +41938,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ABILITY_CAPSULE] =
 {
-    ITEM_PRICE(100000),
+    ITEM_PRICE(25000),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -104403,7 +104403,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ABILITY_PATCH] =
 {
-    ITEM_PRICE(500000),
+    ITEM_PRICE(100000),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
