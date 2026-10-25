@@ -11063,7 +11063,7 @@ const ITEMDATA __data[] =
 
 [ITEM_KELPSY_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(1),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11128,7 +11128,7 @@ const ITEMDATA __data[] =
 
 [ITEM_QUALOT_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(1),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11193,7 +11193,7 @@ const ITEMDATA __data[] =
 
 [ITEM_HONDEW_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(1),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11258,7 +11258,7 @@ const ITEMDATA __data[] =
 
 [ITEM_GREPA_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(1),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -11323,7 +11323,7 @@ const ITEMDATA __data[] =
 
 [ITEM_TAMATO_BERRY] =
 {
-    ITEM_PRICE(80),
+    ITEM_PRICE(1),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,

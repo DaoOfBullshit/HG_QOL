@@ -45,11 +45,11 @@ const struct BadgeMartItems sBadgeMart[] = {
 void LONG_CALL InitMartUI(void *taskManager, FieldSystem *fieldSystem, const u16 *items, int kind, int buySell, int decoWhich, const struct MartItem *priceOverrides);
 
 u16 sCherrygroveCityMart[] = {
-    ITEM_AIR_MAIL, ITEM_HEAL_BALL, 0xFFFF
+    ITEM_AIR_MAIL, ITEM_HEAL_BALL, ITEM_POMEG_BERRY, ITEM_KELPSY_BERRY, ITEM_QUALOT_BERRY, ITEM_HONDEW_BERRY, ITEM_GREPA_BERRY, ITEM_TAMATO_BERRY, 0xFFFF
 };
 
 u16 sVioletCityMart[] = {
-    ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, ITEM_EXP_SHARE, 0xFFFF
+    ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, ITEM_EXP_SHARE, ITEM_LINKING_CORD, 0xFFFF
 };
 
 u16 sAzaleaCityMart[] = {
