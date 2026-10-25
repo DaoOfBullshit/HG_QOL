@@ -16393,7 +16393,7 @@ const ITEMDATA __data[] =
 
 [ITEM_UP_GRADE] =
 {
-    ITEM_PRICE(2100),
+    ITEM_PRICE(1000),
     .holdEffect = HOLD_EFFECT_EVOLVE_PORYGON,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -21073,7 +21073,7 @@ const ITEMDATA __data[] =
 
 [ITEM_DUBIOUS_DISC] =
 {
-    ITEM_PRICE(2100),
+    ITEM_PRICE(1000),
     .holdEffect = HOLD_EFFECT_EVOLVE_PORYGON2,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -104728,7 +104728,7 @@ const ITEMDATA __data[] =
 
 [ITEM_LINKING_CORD] =
 {
-    ITEM_PRICE(8000),
+    ITEM_PRICE(2500),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
