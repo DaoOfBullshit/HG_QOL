@@ -80028,7 +80028,7 @@ const ITEMDATA __data[] =
 
 [ITEM_LONELY_MINT] =
 {
-    ITEM_PRICE(20000),
+    ITEM_PRICE(10000),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
