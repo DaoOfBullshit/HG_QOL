@@ -77,7 +77,7 @@ static void WriteMonMember(const char *dir, int index, const SpeciesDataEntry *e
     WriteLe16(&data[0x0C], entry->speciesData.wildHeldItems.common);
     WriteLe16(&data[0x0E], entry->speciesData.wildHeldItems.rare);
     data[0x10] = entry->speciesData.genderRatio;
-    data[0x11] = entry->speciesData.hatchCycles;
+    data[0x11] = 0;
     data[0x12] = entry->speciesData.baseFriendship;
     data[0x13] = entry->speciesData.expRate;
     data[0x14] = entry->speciesData.eggGroups[0];
